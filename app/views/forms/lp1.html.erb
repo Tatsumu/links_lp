@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="description" content="無料でwebデザイン・プログラミングが学べる">
+        <title>リンクスWEBスクール｜無料でwebデザイン・プログラミングが学べる</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=1200px">
+        <%= javascript_include_tag "//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" %>
+        <%= javascript_include_tag "ouibounce" %>
+
+<script type="text/javascript">
+  window.onbeforeunload = function(e) {
+    e.returnValue = "お問い合わせは無料です。本当にページを閉じますか？";
+  }
+</script>
+<script>
+
+      // if you want to use the 'fire' or 'disable' fn,
+      // you need to save OuiBounce to an object
+      var _ouibounce = ouibounce(document.getElementById('ouibounce-modal'), {
+        aggressive: true,
+        timer: 0,
+        callback: function() { console.log('ouibounce fired!'); }
+      });
+
+      $('body').on('click', function() {
+        $('#ouibounce-modal').hide();
+      });
+
+      $('#ouibounce-modal .modal-footer').on('click', function() {
+        $('#ouibounce-modal').hide();
+      });
+
+      $('#ouibounce-modal .modal').on('click', function(e) {
+        e.stopPropagation();
+      });
+    </script>
+
+ <script>(function() {
+  var _fbq = window._fbq || (window._fbq = []);
+  if (!_fbq.loaded) {
+    var fbds = document.createElement('script');
+    fbds.async = true;
+    fbds.src = '//connect.facebook.net/en_US/fbds.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(fbds, s);
+    _fbq.loaded = true;
+  }
+  _fbq.push(['addPixelId', '651010621688608']);
+})();
+window._fbq = window._fbq || [];
+window._fbq.push(['track', 'PixelInitialized', {}]);
+</script>
+<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=651010621688608&amp;ev=PixelInitialized" /></noscript>
+
+    </head>
+
+    <body>
+        <header class="header">
+            <ul class="s_nav">
+                <li id="home">
+                    <a href="#">ホーム</a>
+                </li>
+                <li>
+                    <a href="#kali">カリキュラム</a>
+                </li>
+                <li>
+                    <a href="#koushi">講師紹介</a>
+                </li>
+                <li>
+                    <a href="#student">生徒の声</a>
+                </li>
+                <li>
+                    <a href="#question">Q&amp;A</a>
+                </li>
+                <li>
+                    <a href="#contact">お問い合わせ</a>
+                </li>
+            </ul>
+        </header>
+        <div class="first_view_wrapper">
+            <div class="content_wrapper1">
+                <div class="shadow"></div>
+                <div class="text_wrapper_1">
+                    <p>完全無料。自分だけの武器を身につける1ヶ月。</p>
+                </div>
+            </div>
+        </div>
+        <div class="second_view_wrapper" id="kali">
+            <h2>リンクスWebスクールとは</h2>
+            <div class="second_content_wrapper">
+                <%= image_tag 'kogihukeib.png' %>
+                <!-- <img src="images/kogihukeib.png"> -->
+                <div class="second_text_wrapper">
+                    <p>リンクスWebスクールとは、1ヶ月間の
+                        <span>完全無料のプログラミング教育サービス</span>です。今、世の中は深刻なデザイナー、プログラマー不足に見舞われています。しかし、日本はデザインやプログラミングの教育が十分になされているとは言えません。そんな中、
+                        <span>多くの学生にデザイン、プログラミングを無料で習得してもらうために</span>リンクスWebスクールは誕生しました。これからITを駆使して社会で活躍するあなたの第一歩をサポートさせていただきます。</p>
+                </div>
+            </div>
+        </div>
+        <div class="third_view_wrapper">
+            <h2>カリキュラム内容</h2>
+            <div class="third_content_wrapper">
+                <div class="third_text_wrapper">
+                    <p>
+                        <span>1ヶ月間の講義で、忙しい方でも無理なくデザイン性の高いホームページを作ることができるようになります！</span>(HTML,CSS,Photoshop,illustrator)。講義の中では、デザイン性の高いホームページの作り方のみに留まらず、
+                        <span>デザインの講義、フリーランスとして生きていくにはどうするのか、Web業界で起業するにはどうしたらいいか</span>、などWeb製作以外にも広い範囲で生徒に共有します。また、履修後、希望があった方には
+                        <span>インターン先の紹介を行っております。</span>なので実際に現場に出て自分の実力を試すことも可能です。</p>
+                </div>
+                <%= image_tag 'kogihukeic.png' %>
+                <!-- <img src="images/kogihukeic.png"> -->
+            </div>
+        </div>
+        <div class="forth_view_wrapper">
+            <div class="forth_view_wrapper2" id="koushi">
+                <h2>講師紹介</h2>
+                <div class="forth_view_content">
+                    <div class="teacher_wrapper">
+                        <%= image_tag 'koshia.png' %>
+                        <!-- <img src="images/koshia.png"> -->
+                        <h3>白澤慶幸</h3>
+                        <p>株式会社Links代表取締役 社長。早稲田大学教育学部卒。 大学時代、ITサービス営業で年間売上4000万を突破する。 現在はリンクスwebスクールだけでなく、電子書籍出版事業、アプリ開発事業、プロモーション事業など多くのweb事業を展開している。</p>
+                    </div>
+                    <div class="teacher_wrapper">
+                        <%= image_tag 'koshib.png' %>
+                        <!-- <img src="images/koshib.png"> -->
+                        <h3>島田慎也</h3>
+                        <p>学生のうちから起業家と共に新規事業を企画して活動する。その中で特にプログラミングの必要性を感じ、独学でプログラミングスキルを徹底的に磨く。独学で学んできたため、受講生がつまずく部分を良く理解している。</p>
+                    </div>
+                    <div class="teacher_wrapper">
+                        <%= image_tag 'koshic.png' %>
+                        <!-- <img src="images/koshic.png"> -->
+                        <h3>秋山竜明</h3>
+                        <p>ネットビジネス、デザイン、プログラミングなど幅広く学ぶ。個人事業主のサイト制作やリサーチなども行っている。また、電子書籍事業にも携わり、出版サポートも行う。スクール講義では、とにかく大枠から理解してもらうように心がけている。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fifth_view_wrapper" id="student">
+            <h2>生徒の声</h2>
+            <div class="fifth_view_content">
+                  <div class="student_wrapper">
+                    <%= image_tag 'Q5.png' %>
+                    <!-- <img src="images/Q5.png"> --><br>
+                        <h3>受講生Aさんの声</h3>
+                        <p>パソコンもほとんど使ったことがなかったのですが、プログラミングやデザインを学んでwebスキルの大切さを学びました。学生のうちから技術を身につけて、インターンにも挑戦していけば就活でも有利になると思います。</p>
+                    </div>
+                    <div class="student_wrapper">
+                    <%= image_tag 'Q4.png' %>
+                    <!-- <img src="images/Q4.png"> --><br>
+                         <h3>受講生Bさんの声</h3>
+                        <p>デザインやプログラミングをマンツーマン指導でしっかり学ぶことができました。プログラミングは学び始めのハードルが高いと思っていたので、そのハードルを越えてからは自分でも進んで学習するようになりました。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sixth_view_wrapper">
+            <a href="#contact"><h2>お問い合わせはこちらから</h2></a>
+        </div>
+        <div class="seventh_view_wrapper" id="question">
+            <h2>こんなワガママにも応えます</h2>
+            <div class="seventh_content_wrapper">
+                <p class="question">
+                    <%= image_tag 'Q1.png' %>
+                    <!-- <img src="images/Q1.png"> -->Q:学校・会社に通いながらでもできますか？</p>
+                <p class="answer">
+                    <%= image_tag 'A1.png' %>
+                    <!-- <img class="answerimg" src="images/A1.png"> -->
+                A:できます。講義時間は毎週２時間以内で、課題も１時間以内に終わる課題がほとんどです。もし忙しい場合でも、マンツーマンなのでスケジュールの相談をしながら進めていくのでどうしても忙しい場合は翌週に持ち越し授業が可能です。 </p>
+
+                <p class="question">
+                    <%= image_tag 'Q2.png' %>
+                    <!-- <img src="images/Q2.png"> -->Q:講義が終わった後の質問体制はどうなってますか？また、受講期限が切れたあとサポートはしていただけるのでしょうか？</p>
+                <p class="answer">
+                    <%= image_tag 'A2.png' %>
+                    <!-- <img class="answerimg" src="images/A2.png"> -->A:メールサポートが充実！２４ｈ以内にすべての質問を担当が返信いたします。是非メールサポートをどんどん活用していきましょう。また、期限が切れたあとでも、1週間に30分のサポート制度があるのでこちらもうまく活用してください。</p>
+                <p class="question">
+                    <%= image_tag 'Q1.png' %>
+                    <!-- <img src="images/Q1.png"> -->Q:インターンをしてみたいのですが、どうすればいいですか？</p>
+                <p class="answer">
+                    <%= image_tag 'A3.png' %>
+                    <!-- <img src="images/A3.png"> -->A:応募フォームからご連絡ください。件名の欄に「インターン申込み」と書いてください。本文の欄にはやりたい理由を箇条書きでいいのでご記入してください。後日、インターン担当の者がご連絡いたします。</p>
+            </div>
+        </div>
+        <div class="eighth_view_wrapper" id="zyusyo">
+            <h2>スクール所在地</h2>
+            <div class="eighth_content_wrapper">
+                <div class="eighth_content_left">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3240.898534518986!2d139.70735679999999!3d35.6795003!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cbf38d93fab%3A0x9c32ec9f4e50b83b!2z44CSMTUxLTAwNTEg5p2x5Lqs6YO95riL6LC35Yy65Y2D6aeE44O26LC377yU5LiB55uu77yR77yR4oiS77yZIOWNg-mnhOOCseiwt-ODnuODs-ODj-OCpOODoA!5e0!3m2!1sja!2sjp!4v1426941412233"
+                    frameborder="0" style="border:0"></iframe>
+                </div>
+                <div class="eighth_content_right">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Tel</td>
+                                <td>03-5413-7185</td>
+                            </tr>
+                            <tr>
+                                <td>所在地</td>
+                                <td>東京都渋谷区千駄ヶ谷4-11-9千駄ヶ谷マンハイム208</td>
+                            </tr>
+                            <tr>
+                                <td>責任者</td>
+                                <td>白澤　慶幸</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+<div id="contact">
+  <h3>お問いあわせ</h3>
+  <div class="contact_wrapper"><form method="post" action="/lp1">
+    <p>お名前※必須<br><input type="text" name="name"></p>
+    <p>メールアドレス※必須<br><input type="text" name="email"></p>
+        <p>電話番号(電話で折り返しご希望の方)<br><input type="tel" name="tel"></p>
+    <p>ラインID(ラインでの連絡をご希望の方)<br><input type="text" name="line"></p>
+    <p>質問などはこちらにどうぞ<br><textarea name="comments"></textarea></p>
+    <input class="submit" type="submit" value="無料体験に参加する"  onclick="window.onbeforeunload=null"/></textarea name="comments"></form>
+      </div>
+</div>
+
+<div id="ouibounce-modal">
+      <div class="underlay"></div>
+      <div class="modal">
+        <div class="modal-title">
+          <h3>ちょっとお待ちください。</h3>
+        </div>
+
+        <div class="modal-body">
+          <p>お問い合わせは無料です。</p>
+
+          <form>
+            <input type="text" placeholder="you@email.com">
+            <input type="submit" value="問い合わせる">
+            <p class="form-notice"></p>
+          </form>
+        </div>
+
+        <div class="modal-footer">
+          <p>いいえ結構です。</p>
+        </div>
+      </div>
+    </div>
+    </body>
+
+</html>
