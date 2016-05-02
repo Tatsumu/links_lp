@@ -3,6 +3,11 @@
 # Version of your assets, change this if you want to expire all your assets.
 Rails.application.config.assets.version = '1.0'
 Rails.application.config.assets.precompile += %w( ouibounce.js )
+Rails.application.config.assets.precompile += %w( animate.min.css )
+Rails.application.config.assets.precompile += %w( bootstrap.css )
+Rails.application.config.assets.precompile += %w( bootstrap.min.css )
+Rails.application.config.assets.precompile += %w( ouibounce.css )
+Rails.application.config.assets.precompile += %w( ouibounce.min.css )
 
 # Add additional assets to the asset load path
 # Rails.application.config.assets.paths << Emoji.images_path

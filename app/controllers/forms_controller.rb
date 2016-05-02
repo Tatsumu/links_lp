@@ -10,6 +10,9 @@ class FormsController < ApplicationController
 
   private
     def lp_request
-      @requests = Form.create()
+      @requests = Form.create(request_params)
+    end
+    def request_params
+      params[:form].permit(:name, :email, :tel, :line, :comments)
     end
 end

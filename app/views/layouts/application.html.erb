@@ -1,14 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>LinksLp</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+  <meta name="description" content="無料でwebデザイン・プログラミングが学べる">
+    <title>リンクスWEBスクール｜無料でwebデザイン・プログラミングが学べる</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=1200px">
+        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+        <%= stylesheet_link_tag "animate.min", :media => "all" %>
+        <%= stylesheet_link_tag "bootstrap", :media => "all" %>
+        <%= stylesheet_link_tag "bootstrap.min", :media => "all" %>
+        <%= stylesheet_link_tag "ouibounce", :media => "all" %>
+        <%= stylesheet_link_tag "ouibounce.min", :media => "all" %>
+        <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+        <%= javascript_include_tag "//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" %>
+        <%= javascript_include_tag "ouibounce" %>
+        <%= csrf_meta_tags %>
+
+ <script>
+ (function() {
+  var _fbq = window._fbq || (window._fbq = []);
+  if (!_fbq.loaded) {
+    var fbds = document.createElement('script');
+    fbds.async = true;
+    fbds.src = '//connect.facebook.net/en_US/fbds.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(fbds, s);
+    _fbq.loaded = true;
+  }
+  _fbq.push(['addPixelId', '651010621688608']);
+})();
+window._fbq = window._fbq || [];
+window._fbq.push(['track', 'PixelInitialized', {}]);
+</script>
+<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=651010621688608&amp;ev=PixelInitialized" /></noscript>
 </head>
 <body>
 
 <%= yield %>
-
+<script>
+  window.fitText( document.getElementById("responsive_headline") );
+</script>
 </body>
 </html>
