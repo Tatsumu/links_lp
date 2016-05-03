@@ -147,7 +147,7 @@
 <div id="contact">
   <h3 style="margin-top: 0px; margin-bottom 0;">お問いあわせ</h3>
   <div class="contact_wrapper">
-    <%= form_tag({controller: :form, action: :lp1}) do %>
+    <%#= form_tag({controller: :forms, action: :lp1}) do %>
     <form method="post" action="/lp1">
       <p>お名前※必須<br><input type="text" name="name"></p>
       <p>メールアドレス※必須<br><input type="text" name="email"></p>
@@ -156,7 +156,7 @@
       <p>質問などはこちらにどうぞ<br><textarea name="comments"></textarea></p>
       <input class="submit" type="submit" value="無料体験に参加する"  onclick="window.onbeforeunload=null"/></textarea name="comments">
     </form>
-    <% end %>
+    <%# end %>
       </div>
 </div>
 
